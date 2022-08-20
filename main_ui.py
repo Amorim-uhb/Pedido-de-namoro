@@ -19,12 +19,12 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QSizePolicy, QWidget)
 
 class Ui_MainWindow(object):
-    def setupUi(self, Namora):
-        if not Namora.objectName():
-            Namora.setObjectName(u"Namora")
-        Namora.resize(450, 500)
-        Namora.setMaximumSize(QSize(450, 500))
-        self.centralwidget = QWidget(Namora)
+    def setupUi(self, ficar):
+        if not ficar.objectName():
+            ficar.setObjectName(u"Namora")
+        ficar.resize(450, 500)
+        ficar.setMaximumSize(QSize(450, 500))
+        self.centralwidget = QWidget(Ficar)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"QWidget#centralwidget{\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(255,0,0,0.5), stop:1 rgba(255,0,0,0.2));\n"
@@ -72,15 +72,15 @@ class Ui_MainWindow(object):
 
         Namora.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(Namora)
+        self.retranslateUi(Ficar)
 
-        QMetaObject.connectSlotsByName(Namora)
+        QMetaObject.connectSlotsByName(Ficar)
     # setupUi
 
     def retranslateUi(self, Namora):
-        Namora.setWindowTitle(QCoreApplication.translate("Namora", u"Namora", None))
-        self.label.setText(QCoreApplication.translate("Namora", u"Quer namorar comigo?", None))
-        self.button_yes.setText(QCoreApplication.translate("Namora", u"Sim", None))
-        self.button_no.setText(QCoreApplication.translate("Namora", u"N\u00e3o", None))
+        Namora.setWindowTitle(QCoreApplication.translate("ficar", u"Namora", None))
+        self.label.setText(QCoreApplication.translate("ficar", u"Quer namorar comigo?", None))
+        self.button_yes.setText(QCoreApplication.translate("ficar", u"Sim", None))
+        self.button_no.setText(QCoreApplication.translate("ficar", u"N\u00e3o", None))
     # retranslateUi
 
