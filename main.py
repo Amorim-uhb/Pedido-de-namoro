@@ -10,7 +10,7 @@ from main_ui import Ui_MainWindow
 
 class Namora(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
-        super(Namora, self).__init__()
+        super(ficar, self).__init__()
         self.setupUi(self)
         
         self.button_no.clicked.connect(self.moveButton)
@@ -37,6 +37,6 @@ class Namora(QtWidgets.QMainWindow, Ui_MainWindow):
 
 app = QtWidgets.QApplication(sys.argv)
 
-window = Namora()
+window = Ficar()
 window.show()
 app.exec()
