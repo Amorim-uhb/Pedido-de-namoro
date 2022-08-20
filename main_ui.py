@@ -70,15 +70,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.button_no)
 
-        Namora.setCentralWidget(self.centralwidget)
+        ficar.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Ficar)
 
         QMetaObject.connectSlotsByName(Ficar)
     # setupUi
 
-    def retranslateUi(self, Namora):
-        Namora.setWindowTitle(QCoreApplication.translate("ficar", u"Namora", None))
+    def retranslateUi(self, ficar):
+        ficar.setWindowTitle(QCoreApplication.translate("ficar", u"Namora", None))
         self.label.setText(QCoreApplication.translate("ficar", u"Quer namorar comigo?", None))
         self.button_yes.setText(QCoreApplication.translate("ficar", u"Sim", None))
         self.button_no.setText(QCoreApplication.translate("ficar", u"N\u00e3o", None))
